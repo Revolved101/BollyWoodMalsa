@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bollyfy — Spotify-like Player</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="logo">🟢 Bollyfy</div>
+      <nav>
+        <a class="active">Home</a>
+        <a>Search</a>
+        <a>Your Library</a>
+      </nav>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <input id="q" type="text" placeholder="Search Bollywood songs, artists, movies…"/>
+        <button id="searchBtn">Search</button>
+      </header>
+
+      <section id="results" class="results"></section>
+    </main>
+  </div>
+
+  <div class="player">
+    <div class="meta">
+      <div id="trackTitle" class="title">Nothing playing</div>
+      <div id="trackArtist" class="artist"></div>
+    </div>
+    <div class="controls">
+      <button id="playPause">▶︎</button>
+    </div>
+    <audio id="audio" preload="none"></audio>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

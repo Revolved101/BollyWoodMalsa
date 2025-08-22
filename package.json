@@ -1,0 +1,16 @@
+
+{
+  "name": "bolly-spotify-replit",
+  "version": "1.0.0",
+  "description": "Spotify-like Bollywood audio player using YouTube search + yt-dlp streaming",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "ytsr": "^3.8.4",
+    "yt-dlp-exec": "^2.5.6"
+  }
+}
